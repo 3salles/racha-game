@@ -4,6 +4,7 @@ import 'package:racha_game/src/screens/bill_value/bill_value.dart';
 import 'package:racha_game/src/screens/create_name_room/create_name_room.dart';
 import 'package:racha_game/src/screens/create_room/create_room.dart';
 import 'package:racha_game/src/screens/enter_with_code/enter_with_code.dart';
+import 'package:racha_game/src/screens/game_lobby/game_lobby.dart';
 import 'package:racha_game/src/screens/get_started/get_started_screen.dart';
 import 'package:racha_game/src/screens/person_name/person_name.dart';
 
@@ -24,6 +25,7 @@ class RachaGameApp extends StatelessWidget {
         "/enter-with-code": (context) => const EnterWithCode(),
         "/bill-value": (context) => const BillValue(),
         "/person-name": (context) => const PersonName(),
+        "/game-lobby": (context) => const GameLobby(),
       },
       theme: ThemeData(
         brightness: Brightness.light,
@@ -46,6 +48,13 @@ class RachaGameApp extends StatelessWidget {
           subtitle1: TextStyle(
             fontFamily: "RopaSans",
             fontSize: 26,
+            fontWeight: FontWeight.w400,
+            color: Color(0xFFF6F6F9),
+            decoration: TextDecoration.none,
+          ),
+          subtitle2: TextStyle(
+            fontFamily: "RopaSans",
+            fontSize: 36,
             fontWeight: FontWeight.w400,
             color: Color(0xFFF6F6F9),
             decoration: TextDecoration.none,

@@ -68,7 +68,7 @@ class PersonName extends StatelessWidget {
                     backgroundColor: const Color(0xFFE7A117),
                     foregroundColor: Colors.white,
                     onPressed: () {
-                      Navigator.pushReplacementNamed(context, "/bill-value");
+                      Navigator.pushReplacementNamed(context, "/game-lobby");
                     },
                   ),
                 ],
