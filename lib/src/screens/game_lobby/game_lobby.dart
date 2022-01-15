@@ -23,16 +23,32 @@ class GameLobby extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 20),
-              Padding(
-                padding: const EdgeInsets.only(top: 30, left: 50),
-                child: Align(
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    "Sala: Pizza",
-                    textAlign: TextAlign.center,
-                    style: Theme.of(context).textTheme.subtitle1,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(top: 30, left: 50),
+                    child: Align(
+                      alignment: Alignment.centerLeft,
+                      child: Text(
+                        "Sala: Pizza",
+                        textAlign: TextAlign.center,
+                        style: Theme.of(context).textTheme.subtitle1,
+                      ),
+                    ),
                   ),
-                ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 30, right: 50),
+                    child: Align(
+                      alignment: Alignment.centerLeft,
+                      child: Text(
+                        "Objetivo: 1500",
+                        textAlign: TextAlign.center,
+                        style: Theme.of(context).textTheme.subtitle1,
+                      ),
+                    ),
+                  ),
+                ],
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 30, left: 50),
@@ -40,17 +56,6 @@ class GameLobby extends StatelessWidget {
                   alignment: Alignment.centerLeft,
                   child: Text(
                     "Código: #pizza3rf5",
-                    textAlign: TextAlign.center,
-                    style: Theme.of(context).textTheme.subtitle1,
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 30, left: 50),
-                child: Align(
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    "Objetivo: 1500",
                     textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.subtitle1,
                   ),
@@ -72,7 +77,7 @@ class GameLobby extends StatelessWidget {
                 child: Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    "Rafael",
+                    "- Rafael",
                     textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.subtitle1,
                   ),
@@ -83,7 +88,7 @@ class GameLobby extends StatelessWidget {
                 child: Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    "Beatriz",
+                    "- Beatriz",
                     textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.subtitle1,
                   ),
@@ -94,7 +99,7 @@ class GameLobby extends StatelessWidget {
                 child: Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    "Riordan",
+                    "- Riordan",
                     textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.subtitle1,
                   ),
@@ -109,7 +114,7 @@ class GameLobby extends StatelessWidget {
                     backgroundColor: const Color(0xFFE7A117),
                     foregroundColor: Colors.white,
                     onPressed: () {
-                      Navigator.pushReplacementNamed(context, "/bill-value");
+                      Navigator.pushReplacementNamed(context, "/ranking-room");
                     },
                   ),
                 ],

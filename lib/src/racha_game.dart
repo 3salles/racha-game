@@ -4,9 +4,11 @@ import 'package:racha_game/src/screens/bill_value/bill_value.dart';
 import 'package:racha_game/src/screens/create_name_room/create_name_room.dart';
 import 'package:racha_game/src/screens/create_room/create_room.dart';
 import 'package:racha_game/src/screens/enter_with_code/enter_with_code.dart';
+import 'package:racha_game/src/screens/final_screen/final_screen.dart';
 import 'package:racha_game/src/screens/game_lobby/game_lobby.dart';
 import 'package:racha_game/src/screens/get_started/get_started_screen.dart';
 import 'package:racha_game/src/screens/person_name/person_name.dart';
+import 'package:racha_game/src/screens/ranking_room/ranking_room.dart';
 
 class RachaGameApp extends StatelessWidget {
   const RachaGameApp({Key? key}) : super(key: key);
@@ -26,6 +28,8 @@ class RachaGameApp extends StatelessWidget {
         "/bill-value": (context) => const BillValue(),
         "/person-name": (context) => const PersonName(),
         "/game-lobby": (context) => const GameLobby(),
+        "/ranking-room": (context) => const RankingRoom(),
+        "/final-screen": (context) => const FinalScreen(),
       },
       theme: ThemeData(
         brightness: Brightness.light,

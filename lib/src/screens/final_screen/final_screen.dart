@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 import '../../core/widgets/action_button_widget.dart';
 
-class EnterWithCode extends StatelessWidget {
-  const EnterWithCode({Key? key}) : super(key: key);
+class FinalScreen extends StatelessWidget {
+  const FinalScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -28,37 +28,45 @@ class EnterWithCode extends StatelessWidget {
                 child: Align(
                   alignment: Alignment.center,
                   child: Text(
-                    "Digite o código da sala",
+                    "Rafael está isento de pagar!",
                     textAlign: TextAlign.center,
-                    style: Theme.of(context).textTheme.subtitle1,
+                    style: Theme.of(context).textTheme.subtitle2,
                   ),
                 ),
               ),
-              const SizedBox(height: 10),
               Padding(
-                padding: const EdgeInsets.only(left: 50, right: 50, bottom: 50),
+                padding: const EdgeInsets.only(left: 30, right: 30),
                 child: Align(
                   alignment: Alignment.center,
-                  child: TextFormField(
-                      decoration: const InputDecoration(
-                        labelText: 'Ex.: #pizza3rf5',
-                        floatingLabelBehavior: FloatingLabelBehavior.always,
-                        border: OutlineInputBorder(),
-                      ),
-                      autocorrect: false,
-                      enableSuggestions: false,
-                      keyboardType: TextInputType.visiblePassword),
+                  child: Text(
+                    "Valor a ser pago por pessoa:",
+                    textAlign: TextAlign.center,
+                    style: Theme.of(context).textTheme.subtitle2,
+                  ),
                 ),
               ),
+              const SizedBox(height: 50),
+              Padding(
+                padding: const EdgeInsets.all(30),
+                child: Align(
+                  alignment: Alignment.center,
+                  child: Text(
+                    "75,00",
+                    textAlign: TextAlign.center,
+                    style: Theme.of(context).textTheme.headline1,
+                  ),
+                ),
+              ),
+              const SizedBox(height: 50),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   ActionButton(
-                    "Continuar",
+                    "Finalizar",
                     backgroundColor: const Color(0xFFE7A117),
                     foregroundColor: Colors.white,
                     onPressed: () {
-                      Navigator.pushReplacementNamed(context, "/person-name");
+                      Navigator.pushReplacementNamed(context, "/");
                     },
                   ),
                 ],
