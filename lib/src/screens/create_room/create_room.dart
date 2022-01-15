@@ -71,7 +71,8 @@ class CreateRoom extends StatelessWidget {
                     backgroundColor: const Color(0xFF2F3847),
                     foregroundColor: Colors.white,
                     onPressed: () {
-                      Navigator.pushReplacementNamed(context, "/room");
+                      Navigator.pushReplacementNamed(
+                          context, "/enter-with-code");
                     },
                   ),
                 ],

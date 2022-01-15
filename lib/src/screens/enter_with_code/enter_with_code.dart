@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 import '../../core/widgets/action_button_widget.dart';
 
-class CreateNameRoom extends StatelessWidget {
-  const CreateNameRoom({Key? key}) : super(key: key);
+class EnterWithCode extends StatelessWidget {
+  const EnterWithCode({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class CreateNameRoom extends StatelessWidget {
                 child: Align(
                   alignment: Alignment.center,
                   child: Text(
-                    "Digite o nome da sala",
+                    "Digite o código da sala",
                     textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.subtitle1,
                   ),
@@ -41,7 +41,7 @@ class CreateNameRoom extends StatelessWidget {
                   alignment: Alignment.center,
                   child: TextFormField(
                       decoration: const InputDecoration(
-                        labelText: 'Ex.: pizza',
+                        labelText: 'Ex.: #pizza3rf5',
                         floatingLabelBehavior: FloatingLabelBehavior.always,
                         border: OutlineInputBorder(),
                       ),
@@ -58,7 +58,7 @@ class CreateNameRoom extends StatelessWidget {
                     backgroundColor: const Color(0xFFE7A117),
                     foregroundColor: Colors.white,
                     onPressed: () {
-                      Navigator.pushReplacementNamed(context, "/bill-value");
+                      Navigator.pushReplacementNamed(context, "/room");
                     },
                   ),
                 ],

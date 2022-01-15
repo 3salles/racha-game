@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 import '../../core/widgets/action_button_widget.dart';
 
-class CreateNameRoom extends StatelessWidget {
-  const CreateNameRoom({Key? key}) : super(key: key);
+class PersonName extends StatelessWidget {
+  const PersonName({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -24,24 +24,34 @@ class CreateNameRoom extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               Padding(
-                padding: const EdgeInsets.all(30),
+                padding: const EdgeInsets.only(top: 30, left: 50),
                 child: Align(
-                  alignment: Alignment.center,
+                  alignment: Alignment.centerLeft,
                   child: Text(
-                    "Digite o nome da sala",
+                    "Nome da sala: Pizza",
                     textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.subtitle1,
                   ),
                 ),
               ),
-              const SizedBox(height: 10),
+              Padding(
+                padding: const EdgeInsets.only(top: 30, left: 50),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    "Digite seu nome",
+                    textAlign: TextAlign.center,
+                    style: Theme.of(context).textTheme.subtitle1,
+                  ),
+                ),
+              ),
               Padding(
                 padding: const EdgeInsets.only(left: 50, right: 50, bottom: 50),
                 child: Align(
                   alignment: Alignment.center,
                   child: TextFormField(
                       decoration: const InputDecoration(
-                        labelText: 'Ex.: pizza',
+                        labelText: 'Ex.: Rafaelfo ',
                         floatingLabelBehavior: FloatingLabelBehavior.always,
                         border: OutlineInputBorder(),
                       ),

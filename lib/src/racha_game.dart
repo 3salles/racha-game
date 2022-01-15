@@ -1,8 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:racha_game/src/screens/bill_value/bill_value.dart';
 import 'package:racha_game/src/screens/create_name_room/create_name_room.dart';
 import 'package:racha_game/src/screens/create_room/create_room.dart';
+import 'package:racha_game/src/screens/enter_with_code/enter_with_code.dart';
 import 'package:racha_game/src/screens/get_started/get_started_screen.dart';
+import 'package:racha_game/src/screens/person_name/person_name.dart';
 
 class RachaGameApp extends StatelessWidget {
   const RachaGameApp({Key? key}) : super(key: key);
@@ -18,6 +21,9 @@ class RachaGameApp extends StatelessWidget {
         "/": (context) => const GetStartedScreen(),
         "/create-room": (context) => const CreateRoom(),
         "/create-name-room": (context) => const CreateNameRoom(),
+        "/enter-with-code": (context) => const EnterWithCode(),
+        "/bill-value": (context) => const BillValue(),
+        "/person-name": (context) => const PersonName(),
       },
       theme: ThemeData(
         brightness: Brightness.light,
