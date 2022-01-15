@@ -1,8 +1,9 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 import '../../core/widgets/action_button_widget.dart';
 
-class GetStartedScreen extends StatelessWidget {
-  const GetStartedScreen({Key? key}) : super(key: key);
+class BillValue extends StatelessWidget {
+  const BillValue({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,33 +22,48 @@ class GetStartedScreen extends StatelessWidget {
                   Image.asset("assets/images/logo.png"),
                 ],
               ),
-              const SizedBox(height: 60),
+              const SizedBox(height: 20),
               Padding(
-                padding: const EdgeInsets.all(50),
+                padding: const EdgeInsets.all(30),
                 child: Align(
                   alignment: Alignment.center,
                   child: Text(
-                    "Jogue para dividir a conta",
+                    "Digite o valor da conta",
                     textAlign: TextAlign.center,
-                    style: Theme.of(context).textTheme.headline1,
+                    style: Theme.of(context).textTheme.subtitle1,
                   ),
                 ),
               ),
-              const SizedBox(height: 40),
+              const SizedBox(height: 10),
+              Padding(
+                padding: const EdgeInsets.only(left: 50, right: 50, bottom: 50),
+                child: Align(
+                  alignment: Alignment.center,
+                  child: TextFormField(
+                      decoration: const InputDecoration(
+                        labelText: 'Valor: ',
+                        floatingLabelBehavior: FloatingLabelBehavior.always,
+                        border: OutlineInputBorder(),
+                      ),
+                      autocorrect: false,
+                      enableSuggestions: false,
+                      keyboardType: TextInputType.visiblePassword),
+                ),
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   ActionButton(
-                    "INICIAR",
+                    "Continuar",
                     backgroundColor: const Color(0xFFE7A117),
                     foregroundColor: Colors.white,
                     onPressed: () {
-                      Navigator.pushReplacementNamed(context, "/create-room");
+                      Navigator.pushReplacementNamed(context, "/person-name");
                     },
                   ),
                 ],
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
             ],
           ),
         ),

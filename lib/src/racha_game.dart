@@ -1,6 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:racha_game/src/screens/bill_value/bill_value.dart';
+import 'package:racha_game/src/screens/create_name_room/create_name_room.dart';
+import 'package:racha_game/src/screens/create_room/create_room.dart';
+import 'package:racha_game/src/screens/enter_with_code/enter_with_code.dart';
+import 'package:racha_game/src/screens/final_screen/final_screen.dart';
+import 'package:racha_game/src/screens/game_lobby/game_lobby.dart';
 import 'package:racha_game/src/screens/get_started/get_started_screen.dart';
+import 'package:racha_game/src/screens/person_name/person_name.dart';
+import 'package:racha_game/src/screens/ranking_room/ranking_room.dart';
 
 class RachaGameApp extends StatelessWidget {
   const RachaGameApp({Key? key}) : super(key: key);
@@ -14,6 +22,14 @@ class RachaGameApp extends StatelessWidget {
       initialRoute: "/",
       routes: {
         "/": (context) => const GetStartedScreen(),
+        "/create-room": (context) => const CreateRoom(),
+        "/create-name-room": (context) => const CreateNameRoom(),
+        "/enter-with-code": (context) => const EnterWithCode(),
+        "/bill-value": (context) => const BillValue(),
+        "/person-name": (context) => const PersonName(),
+        "/game-lobby": (context) => const GameLobby(),
+        "/ranking-room": (context) => const RankingRoom(),
+        "/final-screen": (context) => const FinalScreen(),
       },
       theme: ThemeData(
         brightness: Brightness.light,
@@ -35,9 +51,16 @@ class RachaGameApp extends StatelessWidget {
           // formatação do texto do input
           subtitle1: TextStyle(
             fontFamily: "RopaSans",
-            fontSize: 16,
-            fontWeight: FontWeight.w800,
-            color: Color(0xFF000000),
+            fontSize: 26,
+            fontWeight: FontWeight.w400,
+            color: Color(0xFFF6F6F9),
+            decoration: TextDecoration.none,
+          ),
+          subtitle2: TextStyle(
+            fontFamily: "RopaSans",
+            fontSize: 36,
+            fontWeight: FontWeight.w400,
+            color: Color(0xFFF6F6F9),
             decoration: TextDecoration.none,
           ),
         ),
@@ -62,16 +85,16 @@ class RachaGameApp extends StatelessWidget {
         // incluído o tema dos labels das caixas de texto da aplicação
         inputDecorationTheme: const InputDecorationTheme(
           labelStyle: TextStyle(
-              fontFamily: "SFPro",
-              fontSize: 17,
-              fontWeight: FontWeight.w600,
-              color: Color(0xFF919191)),
+              fontFamily: "RopaSans",
+              fontSize: 22,
+              fontWeight: FontWeight.w400,
+              color: Color.fromARGB(255, 136, 130, 122)),
           // cor da linha da caixa de texto
           enabledBorder: UnderlineInputBorder(
-              borderSide: BorderSide(color: Color(0xFF000000))),
+              borderSide: BorderSide(color: Color(0xFFE7A117))),
           // cor da linha da caixa de texto quando estiver selecionada
           focusedBorder: UnderlineInputBorder(
-              borderSide: BorderSide(color: Color(0xFFFA4A0C))),
+              borderSide: BorderSide(color: Color(0xFFE7A117))),
         ),
       ),
     );
