@@ -35,7 +35,7 @@
 
 Foi proposto a criação de um projeto mobile para dividir a conta de modo divertido e inusitado.
 
-	- 	:nail_care: Layout
+### :nail_care: Layout
 
   O projeto foi prototipado no [Figma](https://www.figma.com/file/KR5QVN1Rsj5vTJ0ZbSvFfl/Racha-game?node-id=14%3A64).
 
