@@ -1,8 +1,8 @@
 <p align="center">
 
-  <h3 align="center">Racha Game</h3>
+ 
   <p align="center">
-  <img src="https://github.com/3salles/racha-game/tree/dev/assets/images" alt="Racha Game" />
+  <img src="https://user-images.githubusercontent.com/62452619/149967706-e6d2cb20-4d59-4700-88bd-ee97d4b83a6d.png" alt="Racha Game" />
 </p>
 
 <p align="center">
